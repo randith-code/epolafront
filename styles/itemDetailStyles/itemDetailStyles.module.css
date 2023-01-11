@@ -1,0 +1,173 @@
+.itemDetails {
+  display: flex;
+  width: 70vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  margin-top: 1rem;
+}
+.itemDetails .imageSection {
+  width: 25vw;
+  height: 25vw;
+  margin: 2.5rem 2.5rem 1rem;
+  background-color: #f3f3f3;
+}
+.itemDetails .detailsSection {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 2.5rem;
+  line-height: 1rem;
+}
+.itemDetails .detailsSection .reviewSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.itemDetails .detailsSection .reviewSection .starSet {
+  display: flex;
+  justify-content: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.itemDetails .detailsSection .reviewSection .starSet .star {
+  fill: #545454;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.itemDetails .detailsSection .reviewSection p {
+  color: #1E48DB;
+  margin-left: 3rem;
+}
+.itemDetails .detailsSection h1 {
+  padding: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+.itemDetails .detailsSection p {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+.itemDetails .detailsSection hr {
+  color: #545454;
+  width: 100%;
+}
+.itemDetails .detailsSection .priceRate {
+  margin: 1rem 0 1.5rem;
+  color: #1E48DB;
+}
+.itemDetails .detailsSection .buttonContainer .seller {
+  background-color: #1E48DB;
+  color: white;
+  border: none;
+  width: 6rem;
+  height: 1.8rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.itemDetails .detailsSection .buttonContainer .transport {
+  background-color: white;
+  color: #1E48DB;
+  border: 0.15rem solid #1E48DB;
+  width: 8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+.itemDetails .detailsSection .location {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 1rem;
+}
+.itemDetails .detailsSection .location .locpin {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: #1E48DB;
+}
+.itemDetails .detailsSection .location p {
+  color: #1E48DB;
+  margin-left: 0.5rem;
+}
+.itemDetails .detailsSection .descript {
+  width: 35vw;
+  font-size: 0.95rem;
+}
+.itemDetails .detailsSection .wishList {
+  background-color: #DFDFDF;
+  border: none;
+  width: 8rem;
+  height: 1.8rem;
+  margin: 1rem 0 1.5rem;
+  cursor: pointer;
+}
+
+.addreview {
+  margin: 1rem 0 3rem;
+  width: 70vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.addreview section {
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.addreview section hr {
+  width: 100%;
+}
+.addreview section .container {
+  display: flex;
+}
+.addreview section .container .star1 {
+  display: flex;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+.addreview section .container .star1 .istar {
+  width: 1rem;
+  height: 1rem;
+  fill: #545454;
+  cursor: pointer;
+}
+.addreview section .container .star1:hover .istar {
+  fill: #1E48DB;
+}
+.addreview section .name {
+  width: 50vw;
+  height: 3rem;
+  margin: 1rem 0 1rem;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+.addreview section .descript {
+  width: 50vw;
+  height: 10rem;
+  margin: 1rem 0 1rem;
+  font-size: 1.1rem;
+}
+.addreview section .submit {
+  border: none;
+  background-color: #1E48DB;
+  color: white;
+  height: 1.8rem;
+  width: 6rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}/*# sourceMappingURL=itemDetailStyles.module.css.map */

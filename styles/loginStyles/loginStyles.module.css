@@ -1,0 +1,89 @@
+.container {
+  background-color: #EEEEEE;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.container .headBanner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/loginBackground.jpg);
+  width: 100%;
+  height: 20vh;
+}
+.container .headBanner .logo {
+  width: 8rem;
+  height: 2rem;
+  fill: white;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.container h1 {
+  color: black;
+  margin-left: 2rem;
+}
+.container .fields {
+  background-color: white;
+  width: 50%;
+  height: 50vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #000;
+  margin-bottom: 20vh;
+}
+.container .fields form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.container .fields label {
+  width: 90%;
+}
+.container .fields label input {
+  background: transparent;
+  border: 0.1rem solid black;
+  height: 5vh;
+  width: 67%;
+  color: #000;
+  font-size: 1.2rem;
+}
+.container .fields label input:focus {
+  outline: none;
+  border: 0.2rem solid;
+}
+.container .fields span {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+.container .fields span .loginbtn {
+  background: transparent;
+  border: 0.11rem solid black;
+  color: black;
+  height: 5vh;
+  width: 6vw;
+  margin-right: 3vw;
+  cursor: pointer;
+}
+.container .fields span .loginbtn:hover {
+  color: #1E48DB;
+  border: 0.12rem solid #1E48DB;
+}
+.container .fields span .clearbtn {
+  background: transparent;
+  border: 0.11rem solid black;
+  color: black;
+  height: 5vh;
+  width: 6vw;
+  margin-right: 3vw;
+  cursor: pointer;
+}
+.container .fields span .clearbtn:hover {
+  border: 0.12rem solid #000;
+}/*# sourceMappingURL=loginStyles.module.css.map */

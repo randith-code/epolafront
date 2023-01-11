@@ -1,0 +1,214 @@
+.Hero{
+    content: '';
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../public/Landing\ Hero.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 50%;
+
+    h2{
+        font-size: 3rem;
+        font-weight: normal;
+    }
+    h1{
+        font-size: 4.5rem;
+        font-weight: bold;
+        word-spacing: 1rem;
+    }
+    h4{
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+    .logo{
+        width: 10rem;
+        height: 5rem;
+        fill: white;
+    }
+    .btn{
+        width: 10rem;
+        height: 2.5rem;
+        background-color: rgba(0, 0, 0, 0.0);
+        border:solid white 0.2rem;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        cursor: pointer;
+
+        &:hover{
+            color: white;
+            border:0.25rem solid white;
+        }
+    }
+    .signin{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1rem;
+        width: 10vw;
+
+        p{
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .google{
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+        }
+    }
+       
+}
+
+.catagories{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .fruits,.coconuts,.vegitables,.spices,.plants{
+        position: relative;
+        width:35vh;
+        height: 32vh;
+        cursor: pointer;
+        display:grid;
+        place-items: center;
+
+       
+        div{
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            opacity: 0;
+            p{
+                color: white;
+                z-index: 10;
+                font-size: 1.3rem;
+            }
+        }
+
+        &:hover{
+            
+            div{
+                opacity: 1;
+                transition: all 1s ease;
+            }
+        }
+    }
+    .fruits{
+        background-image: url('../../public/Fruits.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .coconuts{
+        background-image: url('../../public/Coconuts.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .vegitables{
+        background-image: url('../../public/Vegitables.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .spices{
+        background-image: url('../../public/Spices.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .plants{
+        background-image: url('../../public/Plants.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.Bestseller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        font-size: 2.3rem;
+    }
+    h5{
+        color: #1E48DB;
+        font-size: 1.5rem;
+    }
+    .sellers{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 6rem;
+
+        span{
+            width: 26vw;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+
+            img{
+                width: 100%;
+                height: 80%;
+            }
+
+            p{
+                color: #1E48DB;
+            }
+        }
+    }
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #545454;
+    color: white;
+    font-weight: lighter;
+
+    .partcontainer{
+        width:60%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+
+        .trade{
+            h1{
+                font-weight: lighter;
+                cursor: pointer;
+            }
+            p{
+                cursor: pointer;
+            }
+        }
+        .contact{
+            h1{
+                font-weight: lighter;
+                cursor: pointer;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                .pin,.phone,.mail{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}

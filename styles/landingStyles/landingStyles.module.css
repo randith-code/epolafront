@@ -1,0 +1,191 @@
+.Hero {
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/Landing\ Hero.png);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 50%;
+}
+.Hero h2 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+.Hero h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  word-spacing: 1rem;
+}
+.Hero h4 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.Hero .logo {
+  width: 10rem;
+  height: 5rem;
+  fill: white;
+}
+.Hero .btn {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid white 0.2rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.Hero .btn:hover {
+  color: white;
+  border: 0.25rem solid white;
+}
+.Hero .signin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+  width: 10vw;
+}
+.Hero .signin p {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.Hero .signin .google {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.catagories {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.catagories .fruits, .catagories .coconuts, .catagories .vegitables, .catagories .spices, .catagories .plants {
+  position: relative;
+  width: 35vh;
+  height: 32vh;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.catagories .fruits div, .catagories .coconuts div, .catagories .vegitables div, .catagories .spices div, .catagories .plants div {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+}
+.catagories .fruits div p, .catagories .coconuts div p, .catagories .vegitables div p, .catagories .spices div p, .catagories .plants div p {
+  color: white;
+  z-index: 10;
+  font-size: 1.3rem;
+}
+.catagories .fruits:hover div, .catagories .coconuts:hover div, .catagories .vegitables:hover div, .catagories .spices:hover div, .catagories .plants:hover div {
+  opacity: 1;
+  transition: all 1s ease;
+}
+.catagories .fruits {
+  background-image: url("../../public/Fruits.png");
+  background-size: cover;
+  background-position: center;
+}
+.catagories .coconuts {
+  background-image: url("../../public/Coconuts.png");
+  background-size: cover;
+  background-position: center;
+}
+.catagories .vegitables {
+  background-image: url("../../public/Vegitables.png");
+  background-size: cover;
+  background-position: center;
+}
+.catagories .spices {
+  background-image: url("../../public/Spices.png");
+  background-size: cover;
+  background-position: center;
+}
+.catagories .plants {
+  background-image: url("../../public/Plants.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.Bestseller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Bestseller h3 {
+  font-size: 2.3rem;
+}
+.Bestseller h5 {
+  color: #1E48DB;
+  font-size: 1.5rem;
+}
+.Bestseller .sellers {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 6rem;
+}
+.Bestseller .sellers span {
+  width: 26vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.Bestseller .sellers span img {
+  width: 100%;
+  height: 80%;
+}
+.Bestseller .sellers span p {
+  color: #1E48DB;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #545454;
+  color: white;
+  font-weight: lighter;
+}
+.foot .partcontainer {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.foot .partcontainer .trade h1 {
+  font-weight: lighter;
+  cursor: pointer;
+}
+.foot .partcontainer .trade p {
+  cursor: pointer;
+}
+.foot .partcontainer .contact h1 {
+  font-weight: lighter;
+  cursor: pointer;
+}
+.foot .partcontainer .contact p {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.foot .partcontainer .contact p .pin, .foot .partcontainer .contact p .phone, .foot .partcontainer .contact p .mail {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}/*# sourceMappingURL=landingStyles.module.css.map */

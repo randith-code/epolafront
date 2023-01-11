@@ -1,0 +1,168 @@
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/Doc\ Banner.png);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.banner .logo {
+  width: 10rem;
+  height: 4rem;
+  fill: white;
+  margin-left: 2.5vw;
+}
+
+.formContainer {
+  background-color: white;
+  width: 80vw;
+  margin: 5vh auto 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formContainer .getUserType {
+  width: 60vw;
+}
+.formContainer .getUserType .getUserIn {
+  display: flex;
+  align-items: center;
+  margin: 3rem 2rem 1rem 0;
+  font-size: 1.5rem;
+}
+.formContainer .getUserType .getUserIn select {
+  width: 6rem;
+  height: 2rem;
+  font-size: 1rem;
+  margin-left: 2rem;
+  color: #1E48DB;
+  border: 0.1rem solid #1E48DB;
+  transition: all linear 0.3s;
+}
+.formContainer .getUserType .getUserIn select:focus {
+  border: 0.1rem solid #1E48DB;
+}
+.formContainer .getUserType hr {
+  height: 0.1rem;
+  background-color: #1E48DB;
+  border: none;
+}
+
+.seller {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+.seller label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 0 0;
+}
+.seller label input {
+  height: 2rem;
+  width: 50vw;
+}
+.seller .contact {
+  display: flex;
+  align-items: flex-start;
+}
+.seller .contact span {
+  display: flex;
+  flex-direction: column;
+}
+.seller .contact span input {
+  margin: 0 0 1rem 0;
+}
+.seller .location {
+  display: flex;
+  align-items: flex-start;
+}
+.seller .location span {
+  display: flex;
+  flex-direction: column;
+}
+.seller .location span input {
+  margin: 0 0 1rem 0;
+}
+.seller .description {
+  display: flex;
+  align-items: flex-start;
+}
+.seller .description textarea {
+  width: 50vw;
+}
+.seller .btnsec {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0 2rem 0;
+}
+.seller .btnsec .submit {
+  border: 0.1rem solid #1E48DB;
+  background-color: transparent;
+  width: 6rem;
+  height: 2rem;
+  margin: 0 0 0 1.5rem;
+  color: #1E48DB;
+  cursor: pointer;
+}
+.seller .btnsec .clear {
+  border: 0.1rem solid #545454;
+  background-color: transparent;
+  width: 6rem;
+  height: 2rem;
+  margin: 0 0 0 1.5rem;
+  color: #545454;
+  cursor: pointer;
+}
+
+.buyer {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+.buyer label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 0 0;
+}
+.buyer label input {
+  height: 2rem;
+  width: 50vw;
+}
+.buyer .contact {
+  display: flex;
+  align-items: flex-start;
+}
+.buyer .contact span {
+  display: flex;
+  flex-direction: column;
+}
+.buyer .contact span input {
+  margin: 0 0 1rem 0;
+}
+.buyer .btnsec {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0 2rem 0;
+}
+.buyer .btnsec .submit {
+  border: 0.1rem solid #1E48DB;
+  background-color: transparent;
+  width: 6rem;
+  height: 2rem;
+  margin: 0 0 0 1.5rem;
+  color: #1E48DB;
+  cursor: pointer;
+}
+.buyer .btnsec .clear {
+  border: 0.1rem solid #545454;
+  background-color: transparent;
+  width: 6rem;
+  height: 2rem;
+  margin: 0 0 0 1.5rem;
+  color: #545454;
+  cursor: pointer;
+}/*# sourceMappingURL=signUpStyles.module.css.map */

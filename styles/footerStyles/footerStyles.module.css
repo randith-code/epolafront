@@ -1,0 +1,39 @@
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #545454;
+  color: white;
+  font-weight: lighter;
+}
+.foot .partcontainer {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.foot .partcontainer .trade h1 {
+  font-weight: lighter;
+}
+.foot .partcontainer .trade p {
+  cursor: pointer;
+}
+.foot .partcontainer .user h1 {
+  font-weight: lighter;
+}
+.foot .partcontainer .user p {
+  cursor: pointer;
+}
+.foot .partcontainer .contact h1 {
+  font-weight: lighter;
+}
+.foot .partcontainer .contact p {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.foot .partcontainer .contact p .pin, .foot .partcontainer .contact p .phone, .foot .partcontainer .contact p .mail {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}/*# sourceMappingURL=footerStyles.module.css.map */
