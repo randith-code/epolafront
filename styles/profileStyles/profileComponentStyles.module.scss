@@ -1,0 +1,57 @@
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: fit-content;
+    margin: 0 auto 0;
+
+    .name{
+        display:grid;
+        grid-template-columns: 20vw 30vw;
+        .nameSec{
+           background-color: #DFDFDF;
+           padding: 0.2rem;
+        }
+    }
+
+    .userId{
+        display:grid;
+        grid-template-columns: 20vw 30vw;
+        .idSec{
+            background-color: #DFDFDF;
+            padding: 0.2rem;
+        }
+    }
+    .location{
+        display:grid;
+        grid-template-columns: 20vw 30vw;
+        .locSec{
+            p{
+                background-color: #DFDFDF;
+                padding: 0.2rem;
+            }
+        }
+    }
+    .contact{
+        display:grid;
+        grid-template-columns: 20vw 30vw;
+        .contactSec{
+            p{
+                background-color: #DFDFDF;
+                padding: 0.2rem;
+            }
+        }
+    }
+    .description{
+        display:grid;
+        grid-template-columns: 20vw 30vw;
+
+        .desText{
+            width: 30vw;
+            height: fit-content;
+            overflow-wrap: break-word;
+            background-color: #DFDFDF;
+            padding: 0.2rem;
+        }
+    }
+}

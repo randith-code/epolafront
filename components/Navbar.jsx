@@ -9,13 +9,13 @@ const NavBar = () => {
     return(
         <div className={styles.nav}>
             <div className={styles.container} >
-                <Logo className={styles.logo}/>
+                <a href="/homeFeed"><Logo className={styles.logo}/></a>
                 <input className={styles.search} type="search" placeholder='Search...'/>
-                <Home className={styles.home}/>
+                <a href="/homeFeed"><Home className={styles.home}/></a>
                 <Ctgry className={styles.catagory} />
                 <Trnsport className={styles.transport}/>
             </div>
-            <div className={styles.profile}></div>
+            <a href="/profile"><div className={styles.profile}></div></a>
         </div>
     )
 }

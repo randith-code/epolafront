@@ -1,0 +1,54 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto 0;
+}
+.details .name {
+  display: grid;
+  grid-template-columns: 20vw 30vw;
+}
+.details .name .nameSec {
+  background-color: #DFDFDF;
+  padding: 0.2rem;
+}
+.details .userId {
+  display: grid;
+  grid-template-columns: 20vw 30vw;
+}
+.details .userId .idSec {
+  background-color: #DFDFDF;
+  padding: 0.2rem;
+}
+.details .location {
+  display: grid;
+  grid-template-columns: 20vw 30vw;
+}
+.details .location .locSec p {
+  background-color: #DFDFDF;
+  padding: 0.2rem;
+}
+.details .contact {
+  display: grid;
+  grid-template-columns: 20vw 30vw;
+}
+.details .contact .contactSec p {
+  background-color: #DFDFDF;
+  padding: 0.2rem;
+}
+.details .description {
+  display: grid;
+  grid-template-columns: 20vw 30vw;
+}
+.details .description .desText {
+  width: 30vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-wrap: break-word;
+  background-color: #DFDFDF;
+  padding: 0.2rem;
+}/*# sourceMappingURL=profileComponentStyles.module.css.map */

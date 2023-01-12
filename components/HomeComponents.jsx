@@ -21,7 +21,7 @@ export const ItemComponent = ({iname, description, priceRate}) => {
                 <p className={styles.description}>{description}</p>
                 <p className={styles.price}>Rs.{priceRate} Per Kilogram</p>
                 <section className={styles.btnSection}>
-                    <button className={styles.seeMore}>See More</button>
+                    <a href="/itemDetails"><button className={styles.seeMore}>See More</button></a>
                     <button className={styles.addToWish}>Add To Wish List</button>
                 </section>
             </div>

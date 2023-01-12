@@ -7,20 +7,22 @@
 .container .card {
   background-color: white;
   width: 80vw;
-  height: 80vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 3rem auto 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container .card span {
+.container .card .selection {
   width: 70vw;
   display: flex;
   justify-content: space-around;
   font-size: large;
   margin-top: 1rem;
 }
-.container .card span p {
+.container .card .selection p {
   cursor: pointer;
 }
 .container .card hr {
