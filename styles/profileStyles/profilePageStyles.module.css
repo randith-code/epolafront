@@ -25,7 +25,7 @@
 .container .card .selection p {
   cursor: pointer;
 }
-.container .card hr {
+.container .card .profilehr {
   width: 70vw;
   border: none;
   background-color: #1E48DB;

@@ -27,7 +27,7 @@ const profile = () => {
                     <p onClick={() => setTab("Items")}>Items</p>
                     <p onClick={() => setTab("Tradings")}>Tradings</p>
                 </span>
-                <hr />
+                <hr className={styles.profilehr} />
                 {tab == "Details" ? <Details {...obj}/> : tab == "Items" ? <Items/> : <Tradings/>}
            </div>
         </div>

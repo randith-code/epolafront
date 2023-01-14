@@ -1,8 +1,7 @@
-import styles from '../styles/homeStyles/HomeComponentsStyles.module.css' 
+import styles from '../styles/transportStyles/transportComponentsStyles.module.css'
 
-export const ItemComponent = ({iname, description, priceRate}) => {
-
-    let reviewCount;
+export const VehicleComponent = ({vname, description, priceRate, capacity, vehlicleModel, regNo}) => {
+    let reviewCount
 
     return(
         <div className={styles.itemComponent}>
@@ -10,35 +9,40 @@ export const ItemComponent = ({iname, description, priceRate}) => {
                 <img src="" alt="item-photo" />
             </div>
             <div className={styles.detailSection}>
-                <h1>{iname}</h1>
+                <h1>{vname}</h1>
+                <section className={styles.details}>
+                    <span className={styles.reg}>
+                        <p>{vehlicleModel}</p>|
+                        <p>{regNo}</p>
+                    </span>
+                    <p>Capacity : {capacity}</p>
+                </section>
                 <section className={styles.reviews}>
                     <p>{reviewCount} Reviews</p>
                     <span></span>
                     <a href="/itemDetails">
-                       <p>Add Review</p>
+                    <p>Add Review</p>
                     </a>
                 </section>
                 <p className={styles.description}>{description}</p>
-                <p className={styles.price}>Rs.{priceRate} Per Kilogram</p>
+                <p className={styles.price}>Rs.{priceRate} Per Kilometer</p>
                 <section className={styles.btnSection}>
-                    <a href="/itemDetails"><button className={styles.seeMore}>See More</button></a>
+                    <a href="/vehicleDetails"><button className={styles.seeMore}>See More</button></a>
                 </section>
             </div>
         </div>
     )
 }
 
-
 export const Categories = () => {
     return(
         <div className={styles.Categories}>
             <h1>Categories</h1>
             <span className={styles.catList}>
-                <a href=""><p>Fruits</p></a>
-                <a href=""><p>Vegitables</p></a>
-                <a href=""><p>Spices</p></a>
-                <a href=""><p>Plants</p></a>
-                <a href=""><p>Coconuts and Products</p></a>
+                <a href=""><p>Lorry</p></a>
+                <a href=""><p>Truck</p></a>
+                <a href=""><p>Van</p></a>
+                <a href=""><p>Tuk Tuk</p></a>
             </span>
         </div>
     )

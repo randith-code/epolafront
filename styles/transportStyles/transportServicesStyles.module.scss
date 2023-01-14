@@ -1,0 +1,23 @@
+.transcontainer{
+    height: 100vh;
+    display: flex;
+    background-color: #f5f5f5;
+
+    .vehicles{
+        width: 70vw;
+        height: 100vh;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .vehicles::-webkit-scrollbar {
+        display: none;
+      }
+    .sidebar{
+        width: 30vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

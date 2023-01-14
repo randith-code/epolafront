@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .itemDetails {
   display: flex;
   width: 70vw;
@@ -22,6 +28,16 @@
   height: fit-content;
   margin-top: 2.5rem;
   line-height: 1rem;
+}
+.itemDetails .detailsSection .details {
+  font-size: 0.85rem;
+}
+.itemDetails .detailsSection .details .reg {
+  display: flex;
+  align-items: center;
+}
+.itemDetails .detailsSection .details .reg p {
+  margin: 0 0.4rem 0;
 }
 .itemDetails .detailsSection .reviewSection {
   display: flex;
@@ -113,61 +129,4 @@
   height: 1.8rem;
   margin: 1rem 0 1.5rem;
   cursor: pointer;
-}
-
-.addreview {
-  margin: 1rem 0 3rem;
-  width: 70vw;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-}
-.addreview section {
-  display: flex;
-  justify-content: center;
-  width: 60vw;
-  flex-direction: column;
-  margin-top: 2rem;
-}
-.addreview section hr {
-  width: 100%;
-}
-.addreview section .container {
-  display: flex;
-}
-.addreview section .container .star1 {
-  display: flex;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
-.addreview section .container .star1 .istar {
-  width: 1rem;
-  height: 1rem;
-  fill: #545454;
-  cursor: pointer;
-}
-.addreview section .container .star1:hover .istar {
-  fill: #1E48DB;
-}
-.addreview section .name {
-  width: 50vw;
-  height: 3rem;
-  margin: 1rem 0 1rem;
-  font-size: 1.1rem;
-  font-weight: lighter;
-}
-.addreview section .descript {
-  width: 50vw;
-  height: 10rem;
-  margin: 1rem 0 1rem;
-  font-size: 1.1rem;
-}
-.addreview section .submit {
-  border: none;
-  background-color: #1E48DB;
-  color: white;
-  height: 1.8rem;
-  width: 6rem;
-  margin-bottom: 3rem;
-  cursor: pointer;
-}/*# sourceMappingURL=itemDetailStyles.module.css.map */
+}/*# sourceMappingURL=vehicleDetailsStyles.module.css.map */

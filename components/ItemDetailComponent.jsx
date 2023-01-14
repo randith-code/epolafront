@@ -2,8 +2,13 @@ import Star from '../public/star.svg'
 import Locpin from '../public/bytesize_location.svg'
 
 import styles from '../styles/itemDetailStyles/itemDetailStyles.module.css'
+import { useState } from 'react'
+import { CreateTrade } from './TradingComponents'
 
-export const ItemDetailComponent = ({iname, reviewCount, priceRate, nearestTown, description }) => {
+export const ItemDetailComponent = ({iid, sid, iname, reviewCount, priceRate, nearestTown, description }) => {
+    
+    const [openTrade, setOpentrade] = useState(false)
+
     return(
         <div className={styles.itemDetails}>
             <section className={styles.imageSection}>
@@ -34,8 +39,9 @@ export const ItemDetailComponent = ({iname, reviewCount, priceRate, nearestTown,
                     <p>{nearestTown}</p>
                 </span>
                 <p className={styles.descript}>{description}</p>
-                <button className={styles.wishList}>Add To Wish List</button>
+                <button className={styles.wishList} onClick={() => setOpentrade(true) } >Make a Trade</button>
             </section>
+            {openTrade ? <CreateTrade setOpentrade= {setOpentrade}/> : <></>}
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import { ItemComponent } from "./HomeComponents"
 import styles from "../styles/profileStyles/profileComponentStyles.module.css"
+import { SellerTradingCard } from "./TradingComponents"
 
 export const Details = ({name, userId, address, nearestTown, district, province, email, phone, description}) => {
 
@@ -57,7 +58,9 @@ export const Items = () => {
 export const Tradings = () => {
     return(
         <div>
-            Tradings
+            <SellerTradingCard/> 
+            <SellerTradingCard/>
+            <SellerTradingCard/>
         </div>
     )
 }

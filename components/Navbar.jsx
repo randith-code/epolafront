@@ -12,8 +12,8 @@ const NavBar = () => {
                 <a href="/homeFeed"><Logo className={styles.logo}/></a>
                 <input className={styles.search} type="search" placeholder='Search...'/>
                 <a href="/homeFeed"><Home className={styles.home}/></a>
-                <Ctgry className={styles.catagory} />
-                <Trnsport className={styles.transport}/>
+                <a href="/items"><Ctgry className={styles.catagory} /></a>
+                <a href="/transportServices"><Trnsport className={styles.transport}/></a>
             </div>
             <a href="/profile"><div className={styles.profile}></div></a>
         </div>

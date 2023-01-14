@@ -12,9 +12,9 @@ export const Hero = () =>{
             <h2>FRESH FOOD</h2>
             <h1>DIRECTLY FROM THE FARM</h1>
             <h4>We Connect Buyers And Sellers</h4>
-            <button className={styles.btn}>Log In</button>
+            <a href="/login"><button className={styles.btn}>Log In</button></a>
             <section className={styles.signin}>
-                <p>Sign Up</p>
+                <a href="/signUp"><p>Sign Up</p></a>
                 <span>|</span>
                 <Google className={styles.google}/>
             </section>
