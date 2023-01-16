@@ -2,7 +2,6 @@
   background-color: #DFDFDF;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .container .card {
   background-color: white;

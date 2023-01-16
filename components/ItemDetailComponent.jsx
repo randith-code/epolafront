@@ -5,9 +5,10 @@ import styles from '../styles/itemDetailStyles/itemDetailStyles.module.css'
 import { useState } from 'react'
 import { CreateTrade } from './TradingComponents'
 
-export const ItemDetailComponent = ({iid, sid, iname, reviewCount, priceRate, nearestTown, description }) => {
+export const ItemDetailComponent = ({iid, sid, iname, reviewCount, priceRate, nearestTown, description, email, phone }) => {
     
     const [openTrade, setOpentrade] = useState(false)
+    const [openContact, setOpenContact] = useState(false)
 
     return(
         <div className={styles.itemDetails}>
@@ -30,9 +31,10 @@ export const ItemDetailComponent = ({iid, sid, iname, reviewCount, priceRate, ne
 
                 <p className={styles.priceRate}>Rs.{priceRate} per Kilogram</p>
                 <span className={styles.buttonContainer}>
-                    <button className={styles.seller}>Contact Seller</button>
-                    <button className={styles.transport}>Find Transport</button>
+                    <button className={styles.seller} onClick={() => setOpenContact(!openContact)}>Contact Seller</button>
+                    <a href="/transportServices"><button className={styles.transport}>Find Transport</button></a>
                 </span>
+                {openContact ? <ContactSec email={email} phone={phone}/> : <></>}
                 <hr/>
                 <span className={styles.location}>
                     <Locpin className={styles.locpin}/>
@@ -43,6 +45,15 @@ export const ItemDetailComponent = ({iid, sid, iname, reviewCount, priceRate, ne
             </section>
             {openTrade ? <CreateTrade setOpentrade= {setOpentrade}/> : <></>}
         </div>
+    )
+}
+
+const ContactSec =({email, phone}) => {
+    return(
+        <section className={styles.contactSec}>
+            <p>{email}</p>
+            <p>{phone}</p>
+        </section>
     )
 }
 

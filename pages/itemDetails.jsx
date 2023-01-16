@@ -7,7 +7,7 @@ const ItemDetails = () => {
 
     return(
         <div className={styles.main}>
-            <ItemDetailComponent iname={"Apple"} reviewCount={0} priceRate={1400} nearestTown={"Bandarawela"} description={descript} />
+            <ItemDetailComponent iname={"Apple"} reviewCount={0} priceRate={1400} nearestTown={"Bandarawela"} description={descript} email={"sample@gmail.com"} phone={"0777423483"}/>
             <AddReview/>
         </div>
     )

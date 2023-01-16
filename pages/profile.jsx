@@ -1,7 +1,7 @@
 import styles from '../styles/profileStyles/profilePageStyles.module.css'
 import { Banner } from '../components/SignUpComponents'
 import { useState } from 'react'
-import { Details, Items, Tradings } from '../components/ProfileComponents'
+import { Details, Items, Tradings, AddItem } from '../components/ProfileComponents'
 
 const profile = () => {
 
@@ -21,6 +21,7 @@ const profile = () => {
 
     return(
         <div className={styles.container}>
+            <AddItem/>
             <div className={styles.card}>
                 <span className={styles.selection}>
                     <p onClick={() => setTab("Details")}>Details</p>
